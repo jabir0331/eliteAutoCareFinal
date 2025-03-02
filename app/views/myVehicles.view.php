@@ -160,7 +160,7 @@
                                 <?php
                                 
                                     $imagePath = !empty($vehicle->vehicle_img_path) ?  UPLOADS . '/vehicles/' . $vehicle->vehicle_img_path : "assets/images/default-car.png";
-                               
+                                    
                                 ?>
                                 <img src="<?= $imagePath ?>" alt="<?= $vehicle->make ?> <?= $vehicle->model ?>" class="vehicle-image">
                                 <div class="edit-image-overlay">
