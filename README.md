@@ -227,7 +227,6 @@ Planned or in progress:
 - **Book Service page**: the last-mileage figure is currently fixed at 42,000 km instead of the vehicle's stored `last_serviced_mileage`.
 - **Image uploads**: the upload handler needs a filesystem directory (for example `public/uploads/vehicles/`) defined for it. `UPLOADS` in the config is a URL, not a path.
 - **Access control and hardening**: the Service History page does not check for a logged-in user yet, and `ServiceBookingModel` declares `$allowed_columns` instead of `$allowedColumns`, so its column whitelist is not applied.
-- **Deployment**: `config.php` only defines database settings for `localhost`; add production credentials before hosting.
 - A SQL schema file, so the database can be created in one step
 - An admin or garage-side interface for approving and completing bookings
 
